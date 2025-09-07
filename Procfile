@@ -1,1 +1,1 @@
-web: gunicorn store_index:app
+web: gunicorn -w 1 -b 0.0.0.0:$PORT store_index:app
